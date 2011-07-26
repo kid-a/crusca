@@ -10,7 +10,7 @@ f.close ()
 tokens = nltk.word_tokenize (RAW)
 text = nltk.Text (tokens)
 
-words = [w for w in nltk.FreqDist(text) if len (w) > 10]
+words = [w for w in nltk.FreqDist(text) if len (w) > 4]
 
 
 
