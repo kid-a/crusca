@@ -92,7 +92,7 @@ if __name__ == '__main__':
     text = nltk.Text (tokens)
 
     words = [w for w in nltk.FreqDist(text) if len (w) > 4]
-    words = words[:30]
+    words = words[:40]
     ##print words [:40]
     # t = ''
     # for word in words[:10]:
