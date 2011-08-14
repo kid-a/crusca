@@ -6,5 +6,5 @@ class Cloud(models.Model):
     text = models.TextField (blank = True)
     datetime_created = models.DateTimeField ('date of creation')
     datetime_updated = models.DateTimeField ('last updated')
-    image = models.ImageField (max_length = 500, blank = True)
+    image = models.ImageField (max_length = 500, blank = True, upload_to = 'images/')
     ip_address = models.IPAddressField (blank = True)

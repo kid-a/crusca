@@ -1,4 +1,7 @@
-
+DIRS= \
+clouds
 
 clean:
-	-rm *.pyc *~
+	-rm *.pyc *~;
+	for d in $(DIRS); \
+	do (cd $$d; rm *.pyc *~); done
